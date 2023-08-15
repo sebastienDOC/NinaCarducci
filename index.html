@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.min.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nina Carducci - Photographe</title>
 	<meta 
 		name="description" 
@@ -17,6 +11,14 @@
 		pour retoucher vos photos pour un résultat professionnel, Nina Carducci, photographe en Île-de-France, vous sublime en toutes circonstances.
 		Professionnalisme, sourire et bonne humeur inclus !"
 	>
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"></noscript>
+	<link rel="preload" href="./assets/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+	<noscript><link rel="stylesheet" href="./assets/style.min.css"></noscript>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+	<script src="./assets/maugallery.min.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 </head>
 <body>
 	<nav>
@@ -42,53 +44,36 @@
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner">
-					<div class="carousel-item active">
+					<picture class="carousel-item active">
+						<source srcset="./assets/images/slider/ryoji-iwata-low.webp" media="(max-width: 650px)"/>
+						<source srcset="./assets/images/slider/ryoji-iwata-medium.webp" media="(max-width: 1000px)"/>
+						<source srcset="./assets/images/slider/ryoji-iwata-high.webp"/>
 						<img 
-							src="./assets/images/slider/ryoji-iwata-high.webp   1920w" 
-							srcset="
-								./assets/images/slider/ryoji-iwata-high.webp   1920w,
-								./assets/images/slider/ryoji-iwata-medium.webp 1000w,
-                                ./assets/images/slider/ryoji-iwata-low.webp     450w"
-							type="image/webp"
-                            sizes="
-								(max-width:650px) 450px,
-                                (max-width:1000px) 1000px,
-                                1920px"
-							class="d-block w-100 h-100" 
-							alt="Un homme d'affaire traverse la rue sur un passage piéton">
-					</div>
-					<div class="carousel-item">
+							src="./assets/images/slider/ryoji-iwata-high.webp" 
+							alt="Un homme d'affaire traverse la rue sur un passage piéton" 
+							class="d-block w-100 h-100"
+							type="image/webp"/>
+					</picture>
+					<picture class="carousel-item">
+						<source srcset="./assets/images/slider/nicholas-green-low.webp" media="(max-width: 650px)"/>
+						<source srcset="./assets/images/slider/nicholas-green-medium.webp" media="(max-width: 1000px)"/>
+						<source srcset="./assets/images/slider/nicholas-green-high.webp"/>
 						<img 
 							src="./assets/images/slider/nicholas-green-high.webp" 
-							loading="lazy"
-							srcset="
-                                ./assets/images/slider/nicholas-green-high.webp   1920w,
-								./assets/images/slider/nicholas-green-medium.webp 1000w,
-								./assets/images/slider/nicholas-green-low.webp     450w"
-                            type="image/webp"
-                            sizes="
-								(max-width: 650px) 450px,
-                                (max-width: 1000px) 1000px,
-                                1920px"
-							class="d-block w-100 h-100" 
-							alt="Une foule de personnes heureuses à un spectacle">
-					</div>
-					<div class="carousel-item">
+							alt="Une foule de personnes heureuses à un spectacle" 
+							class="d-block w-100 h-100"
+							type="image/webp"/>
+					</picture>
+					<picture class="carousel-item">
+						<source srcset="./assets/images/slider/edward-cisneros-low.webp" media="(max-width: 650px)"/>
+						<source srcset="./assets/images/slider/edward-cisneros-medium.webp" media="(max-width: 1000px)"/>
+						<source srcset="./assets/images/slider/edward-cisneros-high.webp"/>
 						<img 
 							src="./assets/images/slider/edward-cisneros-high.webp" 
-							loading="lazy"
-							srcset="
-								./assets/images/slider/edward-cisneros-high.webp   1920w,
-                                ./assets/images/slider/edward-cisneros-medium.webp 1000w,
-								./assets/images/slider/edward-cisneros-low.webp     450w"
-                            type="image/webp"
-                            sizes="
-								(max-width: 650px) 450px,
-                                (max-width: 1000px) 1000px,
-                                1920px"
-							class="d-block w-100 h-100" 
-							alt="Un couple marié s'embrasse au centre d'une foule">
-					</div>
+							alt="Un couple marié s'embrasse au centre d'une foule" 
+							class="d-block w-100 h-100"
+							type="image/webp"/>
+					</picture>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -103,20 +88,15 @@
 	</header>
 	<main>
 		<div id="about">
-			<div class="picture left">
+			<picture class="picture left">
+				<source srcset="./assets/images/nina-low.webp" media="(max-width: 650px)"/>
+				<source srcset="./assets/images/nina-medium.webp" media="(max-width: 1000px)"/>
+				<source srcset="./assets/images/nina-high.webp"/>
 				<img 
-					src="./assets/images/nina-high.webp"
-					srcset="
-                        ./assets/images/nina-low.webp    288w,
-                        ./assets/images/nina-medium.webp 400w,
-                        ./assets/images/nina-high.webp   560w"
-                    type="image/webp"
-                    sizes="
-						(max-width:650px) 288px,
-                    	(max-width:1000px) 400px,
-                    	560px"
-					alt="Photo de Nina">
-			</div>
+					src="./assets/images/nina-high.webp" 
+					alt="Photo de Nina" 
+					type="image/webp"/>
+			</picture>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
 				<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
@@ -133,10 +113,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/concerts/aaron-paul-high.webp" 
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/concerts/aaron-paul-high.webp 	1920w,
-							./assets/images/gallery/concerts/aaron-paul-medium.webp 1000w,
-							./assets/images/gallery/concerts/aaron-paul-low.webp    450w"
                         type="image/webp"
 						alt="Salle de concert avec des lumières rouges"/>
 					<img 
@@ -144,10 +120,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/entreprise/ali-morshedlou-high.webp"
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/entreprise/ali-morshedlou-high.webp   1920w,
-							./assets/images/gallery/entreprise/ali-morshedlou-medium.webp 1000w,
-							./assets/images/gallery/entreprise/ali-morshedlou-low.webp    450w"
 						type="image/webp" 
 						alt="Portrait d'un homme en costume les bras croisés"/>
 					<img 
@@ -155,10 +127,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/entreprise/jason-goodman-high.webp"
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/entreprise/jason-goodman-high.webp   1920w,
-							./assets/images/gallery/entreprise/jason-goodman-medium.webp 1000w,
-							./assets/images/gallery/entreprise/jason-goodman-low.webp    450w"
 						type="image/webp"  
 						alt="Portrait d'une femme au second plan riant à son travail"/>
 					<img 
@@ -166,10 +134,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/mariage/hannah-busing-high.webp" 
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/mariage/hannah-busing-high.webp   1920w,
-							./assets/images/gallery/mariage/hannah-busing-medium.webp 1000w,
-							./assets/images/gallery/mariage/hannah-busing-low.webp    450w"
 						type="image/webp" 
 						alt="Des mains s'effleurent du bout des doigts"/>
 					<img 
@@ -177,10 +141,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/portraits/ade-tunji-high.webp" 
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/portraits/ade-tunji-high.webp   1920w,
-							./assets/images/gallery/portraits/ade-tunji-medium.webp 1000w,
-							./assets/images/gallery/portraits/ade-tunji-low.webp    450w"
 						type="image/webp" 
 						alt="Portrait d'un homme de couleur fermant les yeux"/>
 					<img 
@@ -188,10 +148,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/mariage/jakob-owens-high.webp" 
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/mariage/jakob-owens-high.webp   1920w,
-							./assets/images/gallery/mariage/jakob-owens-medium.webp 1000w,
-							./assets/images/gallery/mariage/jakob-owens-low.webp    450w"
 						type="image/webp" 
 						alt="Deux mariés rient ensemble devant un arbre"/>
 					<img 
@@ -199,10 +155,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/portraits/nino-van-prattenburg-high.webp" 
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/portraits/nino-van-prattenburg-high.webp   1920w,
-							./assets/images/gallery/portraits/nino-van-prattenburg-medium.webp 1000w,
-							./assets/images/gallery/portraits/nino-van-prattenburg-low.webp   450w"
 						type="image/webp" 
 						alt="Portrait d'une femme avec des lunettes posant devant un grillage"/>
 					<img 
@@ -210,10 +162,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/concerts/austin-neill-high.webp" 
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/concerts/austin-neill-high.webp	  1920w,
-							./assets/images/gallery/concerts/austin-neill-medium.webp 1000w,
-							./assets/images/gallery/concerts/austin-neill-low.webp	  450w"
 						type="image/webp" 
 						alt="Chanteur (Austin Neil) pendant un concert"/>
 					<img 
@@ -221,10 +169,6 @@
 						class="gallery-item" 
 						src="./assets/images/gallery/entreprise/mateus-campos-high.webp" 
 						loading="lazy"
-						srcset="
-							./assets/images/gallery/entreprise/mateus-campos-high.webp   1920w,
-							./assets/images/gallery/entreprise/mateus-campos-medium.webp 1000w,
-							./assets/images/gallery/entreprise/mateus-campos-low.webp    450w"
 						type="image/webp" 
 						alt="Portrait d'une femme riant devant son ordinateur"/>
 				</div>
@@ -299,20 +243,17 @@
 						<input type="submit" value="Envoyer"/>
 					</form>
 				</div>
-				<div class="picture right">
+				
+				<picture class="picture right">
+					<source srcset="./assets/images/camera-low.webp" media="(max-width: 650px)"/>
+					<source srcset="./assets/images/camera-medium.webp" media="(max-width: 1000px)"/>
+					<source srcset="./assets/images/camera-high.webp"/>
 					<img 
-					src="./assets/images/camera-high.webp"
-					srcset="
-						./assets/images/camera-high.webp   1920w,
-						./assets/images/camera-medium.webp 1000w,
-						./assets/images/camera-low.webp    650w"
-					type="image/webp"
-					sizes="
-						(max-width:650px) 270px,
-						(max-width:1000px) 388px,
-						560px"
-						alt="Appareil photo professionnel">
-				</div>
+						src="./assets/images/camera-high.webp" 
+						loading="lazy"
+						alt="Appareil photo professionnel" 
+						type="image/webp"/>
+				</picture>
 			</div>
 		</div>
 	</footer>
