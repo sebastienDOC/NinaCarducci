@@ -15,7 +15,7 @@
 	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"></noscript>
 	<link rel="preload" href="./assets/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 	<noscript><link rel="stylesheet" href="./assets/style.min.css"></noscript>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/jquery3.4.1"></script>
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
@@ -60,6 +60,7 @@
 						<source srcset="./assets/images/slider/nicholas-green-high.webp"/>
 						<img 
 							src="./assets/images/slider/nicholas-green-high.webp" 
+							loading="lazy"
 							alt="Une foule de personnes heureuses à un spectacle" 
 							class="d-block w-100 h-100"
 							type="image/webp"/>
@@ -69,7 +70,8 @@
 						<source srcset="./assets/images/slider/edward-cisneros-medium.webp" media="(max-width: 1000px)"/>
 						<source srcset="./assets/images/slider/edward-cisneros-high.webp"/>
 						<img 
-							src="./assets/images/slider/edward-cisneros-high.webp" 
+							src="./assets/images/slider/edward-cisneros-high.webp"
+							loading="lazy" 
 							alt="Un couple marié s'embrasse au centre d'une foule" 
 							class="d-block w-100 h-100"
 							type="image/webp"/>
@@ -112,6 +114,7 @@
 						data-gallery-tag="Concert" 
 						class="gallery-item" 
 						src="./assets/images/gallery/concerts/aaron-paul-high.webp" 
+						srcset="./assets/images/gallery/concerts/aaron-paul-low.webp 650w"
 						loading="lazy"
                         type="image/webp"
 						alt="Salle de concert avec des lumières rouges"/>
@@ -119,6 +122,7 @@
 						data-gallery-tag="Entreprises" 
 						class="gallery-item" 
 						src="./assets/images/gallery/entreprise/ali-morshedlou-high.webp"
+						srcset="./assets/images/gallery/entreprise/ali-morshedlou-low.webp 650w"
 						loading="lazy"
 						type="image/webp" 
 						alt="Portrait d'un homme en costume les bras croisés"/>
@@ -126,6 +130,7 @@
 						data-gallery-tag="Entreprises" 
 						class="gallery-item" 
 						src="./assets/images/gallery/entreprise/jason-goodman-high.webp"
+						srcset="./assets/images/gallery/entreprise/jason-goodman-low.webp 650w"
 						loading="lazy"
 						type="image/webp"  
 						alt="Portrait d'une femme au second plan riant à son travail"/>
@@ -133,6 +138,7 @@
 						data-gallery-tag="Mariages" 
 						class="gallery-item" 
 						src="./assets/images/gallery/mariage/hannah-busing-high.webp" 
+						srcset="./assets/images/gallery/mariage/hannah-busing-low.webp 650w"
 						loading="lazy"
 						type="image/webp" 
 						alt="Des mains s'effleurent du bout des doigts"/>
@@ -140,6 +146,7 @@
 						data-gallery-tag="Portrait" 
 						class="gallery-item" 
 						src="./assets/images/gallery/portraits/ade-tunji-high.webp" 
+						srcset="./assets/images/gallery/portraits/ade-tunji-low.webp 650w"
 						loading="lazy"
 						type="image/webp" 
 						alt="Portrait d'un homme de couleur fermant les yeux"/>
@@ -147,6 +154,7 @@
 						data-gallery-tag="Mariages" 
 						class="gallery-item" 
 						src="./assets/images/gallery/mariage/jakob-owens-high.webp" 
+						srcset="./assets/images/gallery/mariage/jakob-owens-low.webp 650w"
 						loading="lazy"
 						type="image/webp" 
 						alt="Deux mariés rient ensemble devant un arbre"/>
@@ -154,6 +162,7 @@
 						data-gallery-tag="Portrait" 
 						class="gallery-item" 
 						src="./assets/images/gallery/portraits/nino-van-prattenburg-high.webp" 
+						srcset="./assets/images/gallery/entreprise/ali-morshedlou-low.webp 650w"
 						loading="lazy"
 						type="image/webp" 
 						alt="Portrait d'une femme avec des lunettes posant devant un grillage"/>
@@ -161,6 +170,7 @@
 						data-gallery-tag="Concert" 
 						class="gallery-item" 
 						src="./assets/images/gallery/concerts/austin-neill-high.webp" 
+						srcset="./assets/images/gallery/concerts/austin-neill-low.webp 650w"
 						loading="lazy"
 						type="image/webp" 
 						alt="Chanteur (Austin Neil) pendant un concert"/>
@@ -168,6 +178,7 @@
 						data-gallery-tag="Entreprises" 
 						class="gallery-item" 
 						src="./assets/images/gallery/entreprise/mateus-campos-high.webp" 
+						srcset="./assets/images/gallery/entreprise/mateus-campos-low.webp 650w"
 						loading="lazy"
 						type="image/webp" 
 						alt="Portrait d'une femme riant devant son ordinateur"/>
